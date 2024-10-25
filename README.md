@@ -1,6 +1,6 @@
 # mercury-clone
 
-![alt text](image.png)
+![alt text](./res/demo_screenshot.png)
 
 ## **tech stack:**
 1. react (typescript)
