@@ -26,7 +26,7 @@ const grayButtonStyle = {
 
 export function Dashboard() {
 	return (
-    <Box sx={{ padding: "15px", marginX: 20}}>
+    <Box>
       <Typography fontSize={20}>Welcome, Jane</Typography>
       <Box
         sx={{
@@ -38,6 +38,7 @@ export function Dashboard() {
         <Stack direction="row" spacing={1}>
           <Button
             variant="contained"
+            disableRipple
             startIcon={
               <FontAwesomeIcon icon={faPaperPlane} style={iconStyle} />
             }
@@ -54,6 +55,7 @@ export function Dashboard() {
           </Button>
           <Button
             variant="contained"
+            disableRipple
             startIcon={
               <FontAwesomeIcon icon={faArrowLeftLong} style={iconStyle} />
             }
@@ -62,18 +64,21 @@ export function Dashboard() {
           </Button>
           <Button
             variant="contained"
+            disableRipple
             startIcon={<FontAwesomeIcon icon={faLeftRight} style={iconStyle} />}
             sx={grayButtonStyle}>
             Transfer
           </Button>
           <Button
             variant="contained"
+            disableRipple
             startIcon={<FontAwesomeIcon icon={faPlus} style={iconStyle} />}
             sx={grayButtonStyle}>
             Deposit
           </Button>
           <Button
             variant="contained"
+            disableRipple
             startIcon={
               <FontAwesomeIcon icon={faEnvelopeOpenText} style={iconStyle} />
             }
@@ -82,6 +87,7 @@ export function Dashboard() {
           </Button>
           <Button
             variant="contained"
+            disableRipple
             startIcon={
               <FontAwesomeIcon icon={faFileInvoice} style={iconStyle} />
             }
@@ -91,6 +97,7 @@ export function Dashboard() {
         </Stack>
         <Button
           variant="text"
+          disableRipple
           startIcon={
             <FontAwesomeIcon icon={faEllipsisVertical} style={iconStyle} />
           }

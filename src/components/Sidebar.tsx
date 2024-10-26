@@ -32,18 +32,21 @@ const Sidebar = () => {
   return (
     <Box
       sx={{
-        width: 240,
+        width: {
+          xs: 200,
+          sm: 240,
+        },
         flexShrink: 0,
         borderRight: '1px solid rgba(0, 0, 0, 0.12)',
         height: '100vh',
         position: 'fixed',
         left: 10,
         top: 0,
-		paddingRight: "10px",
+        paddingRight: "10px",
         overflowY: 'auto',
       }}
     >
-      <List sx={{ padding: '4px' }}>
+      <List sx={{ paddingX: '4px' }}>
         {sidebarItems.map((item, index) => (
           <React.Fragment key={item.text}>
             {index === 7 && (
@@ -54,7 +57,7 @@ const Sidebar = () => {
                 Workflows
               </Typography>
             )}
-            <ListItem disablePadding sx={{ my: '2px' }}>
+            <ListItem disablePadding sx={{ my: '4px' }}>
               <ListItemButton
                 component={Link}
                 to={item.path}
@@ -62,8 +65,17 @@ const Sidebar = () => {
                 disableRipple
                 sx={{
                   borderRadius: '10px',
+                  width: '192px',
+                  height: '36px',
                   '&.Mui-selected': {
                     backgroundColor: 'rgba(0, 0, 0, 0.08)',
+                    '& .MuiListItemText-primary': {
+                      fontWeight: 'bold',
+                      color: 'black',
+                    },
+                    '& .MuiListItemIcon-root': {
+                      color: '#5264EA',
+                    },
                   },
                   '&:hover': {
                     backgroundColor: 'rgba(0, 0, 0, 0.04)',
