@@ -9,7 +9,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
   return (
     <Box
       sx={{
-        padding: "15px",
+        padding: "40px",
         marginX: {
           xs: 2,
           sm: 4,

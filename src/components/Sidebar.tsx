@@ -53,7 +53,7 @@ const Sidebar = () => {
       sx={{
         width: {
           xs: 200,
-          sm: 220,
+          sm: 210,
           whiteSpace: "nowrap",
         },
         flexShrink: 0,
@@ -97,7 +97,7 @@ const Sidebar = () => {
                   marginRight: "8px",
                 }}
               />
-              <Typography>Mercury Demo</Typography>
+              <Typography sx={{ fontSize: "14px" }}>Mercury Demo</Typography>
             </Box>
             <ChevronsUpDownIcon />
           </Button>
