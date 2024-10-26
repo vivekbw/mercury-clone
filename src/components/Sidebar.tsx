@@ -53,15 +53,15 @@ const Sidebar = () => {
       sx={{
         width: {
           xs: 200,
-          sm: 240,
+          sm: 220,
+          whiteSpace: "nowrap",
         },
         flexShrink: 0,
         borderRight: "1px solid rgba(0, 0, 0, 0.12)",
         height: "100vh",
         position: "fixed",
-        left: 10,
+        left: 0,
         top: 0,
-        paddingRight: "10px",
         overflowY: "auto",
       }}>
       <List sx={{ paddingX: "4px" }}>
@@ -75,6 +75,7 @@ const Sidebar = () => {
               justifyContent: "space-between",
               textTransform: "none",
               color: "black",
+              marginX: "4px",
               borderRadius: "10px",
               padding: "4px 8px 4px 4px",
               "&.Mui-selected": {
@@ -151,7 +152,7 @@ const Sidebar = () => {
             Log out
           </MenuItem>
         </Menu>
-        <Divider sx={{ mb: 3, mt: 2 }} />
+        <Divider sx={{ mb: 3, mt: 2, width: "221px" }} />
         {sidebarItems.map((item, index) => (
           <React.Fragment key={item.text}>
             {index === 7 && (
@@ -171,6 +172,7 @@ const Sidebar = () => {
                   borderRadius: "10px",
                   width: "192px",
                   height: "36px",
+                  marginX: "4px",
                   "&.Mui-selected": {
                     backgroundColor: "#F3F4F6",
                     "& .MuiListItemText-primary": {
