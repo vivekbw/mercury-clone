@@ -185,7 +185,7 @@ const Sidebar = () => {
                     backgroundColor: "#F3F4F6",
                   },
                 }}>
-                <ListItemIcon sx={{ minWidth: "36px" }}>
+                <ListItemIcon sx={{ minWidth: "30px" }}>
                   <FontAwesomeIcon
                     icon={item.icon}
                     style={{ fontSize: "13px" }}
