@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'ArcadiaDisplay-Variable';
+  src: url('../fonts/ArcadiaDisplay-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArcadiaText-Variable';
+  src: url('../fonts/ArcadiaText-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal-Variable';
+  src: url('../fonts/PPNeueMontreal-Variable.woff') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
