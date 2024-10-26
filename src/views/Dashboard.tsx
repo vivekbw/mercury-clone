@@ -26,14 +26,14 @@ const grayButtonStyle = {
 
 export function Dashboard() {
 	return (
-    <Box sx={{ padding: "15px" }}>
+    <Box sx={{ padding: "15px", marginX: 20}}>
       <Typography fontSize={20}>Welcome, Jane</Typography>
       <Box
         sx={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          marginTop: 1,
+          marginTop: 2,
         }}>
         <Stack direction="row" spacing={1}>
           <Button
