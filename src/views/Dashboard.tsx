@@ -26,74 +26,82 @@ const grayButtonStyle = {
 
 export function Dashboard() {
 	return (
-    <Box sx={{ padding: "15px" }}>
+    <Box>
       <Typography fontSize={20}>Welcome, Jane</Typography>
       <Box
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          alignItems: "center",
-          marginTop: 1,
-        }}>
-        <Stack direction="row" spacing={1}>
-          <Button
-            variant="contained"
-            startIcon={
-              <FontAwesomeIcon icon={faPaperPlane} style={iconStyle} />
-            }
-            sx={{
-              backgroundColor: "#5264EA",
-              borderRadius: "20px",
-              textTransform: "none",
-              fontSize: 11,
-              color: "white",
-              paddingY: "4px",
-              paddingX: "16px",
-            }}>
-            Send
-          </Button>
-          <Button
-            variant="contained"
-            startIcon={
-              <FontAwesomeIcon icon={faArrowLeftLong} style={iconStyle} />
-            }
-            sx={grayButtonStyle}>
-            Request
-          </Button>
-          <Button
-            variant="contained"
-            startIcon={<FontAwesomeIcon icon={faLeftRight} style={iconStyle} />}
-            sx={grayButtonStyle}>
-            Transfer
-          </Button>
-          <Button
-            variant="contained"
-            startIcon={<FontAwesomeIcon icon={faPlus} style={iconStyle} />}
-            sx={grayButtonStyle}>
-            Deposit
-          </Button>
-          <Button
-            variant="contained"
-            startIcon={
-              <FontAwesomeIcon icon={faEnvelopeOpenText} style={iconStyle} />
-            }
-            sx={grayButtonStyle}>
-            Pay Bill
-          </Button>
-          <Button
-            variant="contained"
-            startIcon={
-              <FontAwesomeIcon icon={faFileInvoice} style={iconStyle} />
-            }
-            sx={grayButtonStyle}>
-            Create Inovice
-          </Button>
-        </Stack>
+          alignItems: "flex-start",
+          marginTop: 2,
+          flexWrap: "wrap",
+        }}
+      >
+        <Box sx={{ overflowX: "auto", maxWidth: "100%", pb: 2 }}>
+          <Stack direction="row" spacing={1} sx={{ flexWrap: "nowrap", minWidth: "max-content" }}>
+            <Button
+              variant="contained"
+              disableRipple
+              startIcon={<FontAwesomeIcon icon={faPaperPlane} style={iconStyle} />}
+              sx={{
+                backgroundColor: "#5264EA",
+                borderRadius: "20px",
+                textTransform: "none",
+                fontSize: 11,
+                color: "white",
+                paddingY: "4px",
+                paddingX: "16px",
+                whiteSpace: "nowrap",
+              }}
+            >
+              Send
+            </Button>
+            <Button
+              variant="contained"
+              disableRipple
+              startIcon={<FontAwesomeIcon icon={faArrowLeftLong} style={iconStyle} />}
+              sx={{ ...grayButtonStyle, whiteSpace: "nowrap" }}
+            >
+              Request
+            </Button>
+            <Button
+              variant="contained"
+              disableRipple
+              startIcon={<FontAwesomeIcon icon={faLeftRight} style={iconStyle} />}
+              sx={{ ...grayButtonStyle, whiteSpace: "nowrap" }}
+            >
+              Transfer
+            </Button>
+            <Button
+              variant="contained"
+              disableRipple
+              startIcon={<FontAwesomeIcon icon={faPlus} style={iconStyle} />}
+              sx={{ ...grayButtonStyle, whiteSpace: "nowrap" }}
+            >
+              Deposit
+            </Button>
+            <Button
+              variant="contained"
+              disableRipple
+              startIcon={<FontAwesomeIcon icon={faEnvelopeOpenText} style={iconStyle} />}
+              sx={{ ...grayButtonStyle, whiteSpace: "nowrap" }}
+            >
+              Pay Bill
+            </Button>
+            <Button
+              variant="contained"
+              disableRipple
+              startIcon={<FontAwesomeIcon icon={faFileInvoice} style={iconStyle} />}
+              sx={{ ...grayButtonStyle, whiteSpace: "nowrap" }}
+            >
+              Create Invoice
+            </Button>
+          </Stack>
+        </Box>
         <Button
           variant="text"
-          startIcon={
-            <FontAwesomeIcon icon={faEllipsisVertical} style={iconStyle} />
-          }
+          disableRipple
+          startIcon={<FontAwesomeIcon icon={faEllipsisVertical} style={iconStyle} />}
           sx={{
             backgroundColor: "transparent",
             color: "black",
@@ -103,10 +111,12 @@ export function Dashboard() {
             boxShadow: "none",
             paddingY: "4px",
             paddingX: "16px",
+            whiteSpace: "nowrap",
             "&:hover": {
               ...grayButtonStyle["&:hover"],
             },
-          }}>
+          }}
+        >
           Customize
         </Button>
       </Box>
