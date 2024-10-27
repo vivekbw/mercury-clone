@@ -15,3 +15,4 @@ _Goal_
 1. react (typescript)
 2. backend (haskell)
 3. database (SQLite)
+4. hosting (vercel)
