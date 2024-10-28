@@ -176,7 +176,6 @@ const Sidebar = () => {
                   "&.Mui-selected": {
                     backgroundColor: "#F3F4F6",
                     "& .MuiListItemText-primary": {
-                      fontWeight: "bold",
                       color: "black",
                     },
                     "& .MuiListItemIcon-root": {
